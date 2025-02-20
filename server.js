@@ -1,9 +1,8 @@
 const express = require('express');
 require('dotenv').config();
 const { connectToDB, getData } = require('./controllers/dbController');
-// require('dotenv').config({ path: 'ENV_FILENAME' });
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 const app = express();
 
